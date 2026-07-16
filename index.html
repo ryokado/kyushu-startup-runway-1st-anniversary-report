@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九州スタートアップランウェイ 一周年総会 イベントレポート</title>
+<meta name="description" content="2026年7月16日開催、九州スタートアップランウェイ一周年総会のイベントレポート。1年間の活動報告、特別講演「企業価値担保権」、資金調達リアル事例トークセッション、2年目方針をお届けします。">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+  :root {
+    --navy: #2b3447;
+    --text-light: #5a6478;
+    --border: #e7e9ef;
+    --bg-alt: #f7f8fb;
+    --max-width: 780px;
+    --c-purple: #6f5aa8;
+    --c-blue: #4a66c8;
+    --c-cyan: #45b8e0;
+    --c-green: #57b65a;
+    --c-yellow: #f2c83d;
+    --c-orange: #ef8a3a;
+    --c-red: #e25064;
+    --grad: linear-gradient(to right, var(--c-purple), var(--c-blue), var(--c-cyan), var(--c-green), var(--c-yellow), var(--c-orange), var(--c-red));
+    --chip-blue: #e7ecfb;
+    --chip-pink: #fbe3e7;
+    --chip-orange: #fdedd9;
+    --chip-green: #e2f3e3;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', "Hiragino Sans", sans-serif;
+    color: var(--navy);
+    background: #ffffff;
+    line-height: 1.9;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--c-blue); }
+
+  /* ===== Hero ===== */
+  .hero {
+    text-align: center;
+    padding: 0;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero-lead-wrap {
+    background: var(--bg-alt);
+    padding: 40px 24px 44px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-lead {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 2;
+  }
+  .hero-meta {
+    max-width: var(--max-width);
+    margin: 18px auto 0;
+    font-size: 13px;
+    color: var(--text-light);
+    letter-spacing: 0.02em;
+  }
+
+  /* ===== Overview card ===== */
+  .overview {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    padding: 0 24px;
+  }
+  .overview-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .overview-item .label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .overview-item .value {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.6;
+  }
+
+  /* ===== TOC ===== */
+  .toc {
+    max-width: var(--max-width);
+    margin: 0 auto 48px;
+    padding: 0 24px;
+  }
+  .toc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  .toc-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 999px;
+    color: var(--navy);
+    text-decoration: none;
+    transition: transform 0.15s ease;
+  }
+  .toc-chip:hover { transform: translateY(-2px); }
+  .toc-chip .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* ===== Main container ===== */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  article { padding: 0 0 72px; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--navy);
+    margin: 64px 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    line-height: 1.5;
+  }
+  h2 .pixel-mark {
+    display: grid;
+    grid-template-columns: repeat(3, 8px);
+    grid-template-rows: repeat(3, 8px);
+    gap: 2px;
+    flex-shrink: 0;
+  }
+  h2 .pixel-mark span { border-radius: 2px; }
+
+  h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 32px 0 14px;
+  }
+
+  p { margin-bottom: 20px; }
+
+  .section-label {
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 999px;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+
+  /* ===== Speaker cards ===== */
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 24px 0 32px;
+  }
+  .speaker-card {
+    background: var(--bg-alt);
+    border-radius: 12px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--c-blue);
+  }
+  .speaker-card:nth-child(1) { border-top-color: var(--c-cyan); }
+  .speaker-card:nth-child(2) { border-top-color: var(--c-green); }
+  .speaker-card:nth-child(3) { border-top-color: var(--c-orange); }
+  .speaker-card .name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .speaker-card .org {
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  /* ===== Quote ===== */
+  blockquote {
+    background: var(--bg-alt);
+    border-left: 4px solid var(--c-red);
+    padding: 20px 24px;
+    margin: 28px 0;
+    border-radius: 0 12px 12px 0;
+    font-size: 15px;
+    color: #3d475c;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-light);
+    font-style: normal;
+  }
+
+  /* ===== Highlight box ===== */
+  .highlight-box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin: 32px 0;
+  }
+  .highlight-box h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+    letter-spacing: 0.06em;
+  }
+  .highlight-box p { font-size: 15px; margin-bottom: 0; }
+
+  /* ===== Roadmap cards ===== */
+  .roadmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 24px 0 32px;
+  }
+  .roadmap-card {
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+  .roadmap-card .num {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .roadmap-card .ttl {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .roadmap-card .desc {
+    font-size: 12.5px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ===== Recruit banner ===== */
+  .recruit-banner {
+    margin: 40px 0;
+    padding: 3px;
+    border-radius: 16px;
+    background: var(--grad);
+  }
+  .recruit-banner-inner {
+    background: #fff;
+    border-radius: 13px;
+    padding: 26px 28px;
+    text-align: center;
+  }
+  .recruit-banner-inner .tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--c-red);
+    margin-bottom: 8px;
+  }
+  .recruit-banner-inner p { margin-bottom: 0; font-size: 14.5px; }
+
+  /* ===== Photo placeholder ===== */
+  .photo-placeholder {
+    margin: 32px 0;
+    border: 1.5px dashed #c8cdd8;
+    border-radius: 12px;
+    padding: 48px 24px;
+    text-align: center;
+    color: #9aa2b3;
+    font-size: 13px;
+    background: #fbfbfd;
+  }
+
+  /* ===== Photo ===== */
+  .photo-group {
+    margin: 40px 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(43,52,71,0.12);
+  }
+  .photo-group img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .photo-group figcaption {
+    background: var(--bg-alt);
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--text-light);
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ===== Venue credit ===== */
+  .venue-credit {
+    margin: 20px 0 32px;
+  }
+  .venue-credit img { height: 24px; }
+
+  /* ===== Divider ===== */
+  .divider {
+    height: 6px;
+    border-radius: 3px;
+    background: var(--grad);
+    opacity: 0.85;
+    margin: 56px 0;
+  }
+
+  /* ===== Footer ===== */
+  .article-footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.85);
+    padding: 44px 24px;
+    text-align: center;
+  }
+  .article-footer p {
+    font-size: 13px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    line-height: 1.9;
+  }
+  .article-footer .org-en {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.5);
+    margin-top: 10px;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 640px) {
+    .overview-card { grid-template-columns: 1fr; }
+    .roadmap { grid-template-columns: 1fr; }
+    h2 { font-size: 19px; }
+    .hero-lead-wrap { padding: 32px 20px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="images/hero.png" alt="九州スタートアップランウェイ 1st ANNIVERSARY 一周年総会 EVENT REPORT">
+</header>
+
+<div class="hero-lead-wrap">
+  <p class="hero-lead">
+    2026年7月16日（木）、九州スタートアップランウェイ（九州SR）は、福岡・GMO天神オフィスにて「一周年総会」を開催しました。会場には参画各社・自治体関係者・支援機関など約50名が集まり、活動開始から1年間の歩みを振り返るとともに、2年目に向けた方針を共有しました。当日の様子をお届けします。
+  </p>
+  <p class="hero-meta">主催：九州スタートアップランウェイ事務局</p>
+</div>
+
+<div class="overview">
+  <div class="overview-card">
+    <div class="overview-item">
+      <div class="label">DATE</div>
+      <div class="value">2026年7月16日（木）<br>17:00〜19:50</div>
+    </div>
+    <div class="overview-item">
+      <div class="label">VENUE</div>
+      <div class="value">GMO 天神オフィス<br>（福岡市中央区天神）</div>
+    </div>
+    <div class="overview-item">
+      <div class="label">PARTICIPANTS</div>
+      <div class="value">参画各社・自治体関係者<br>支援機関 約50名</div>
+    </div>
+  </div>
+</div>
+
+<nav class="toc">
+  <div class="toc-list">
+    <a class="toc-chip" style="background:var(--chip-blue);" href="#session1"><span class="dot" style="background:var(--c-blue);"></span>1年間の軌跡</a>
+    <a class="toc-chip" style="background:var(--chip-pink);" href="#lecture"><span class="dot" style="background:var(--c-red);"></span>特別講演</a>
+    <a class="toc-chip" style="background:var(--chip-orange);" href="#session2"><span class="dot" style="background:var(--c-orange);"></span>資金調達のリアル</a>
+    <a class="toc-chip" style="background:var(--chip-green);" href="#roadmap"><span class="dot" style="background:var(--c-green);"></span>2年目方針</a>
+  </div>
+</nav>
+
+<div class="container">
+<article>
+
+<h2><span class="pixel-mark"><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span></span>会場は、今年開所したばかりのGMO天神オフィス</h2>
+
+<p>
+会場を提供いただいたのは、GMOインターネットグループが今年4月に開所したばかりのグループ統合オフィス。「オフィスはビジネスの武器」という考えのもと、社内外の多くの人が集まり、交流から新たな価値を生み出す場として設計されています。
+</p>
+
+<p>
+冒頭のご挨拶では、「私たち自身も20年前に福岡で創業し、小さなところから失敗と挑戦を重ねて今に至っている。その経験とサービスで、九州のスタートアップの成長に貢献したい」という温かいメッセージをいただきました。
+</p>
+
+<div class="venue-credit">
+  <img src="images/gmo-logo-trim.png" alt="会場提供：GMO INTERNET GROUP">
+</div>
+
+<div class="photo-placeholder">📷 会場・開会挨拶の写真をここに挿入</div>
+
+<h2><span class="pixel-mark"><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span></span>全国に広がったスタートアップランウェイ</h2>
+
+<p>
+続いて、全国のスタートアップランウェイを推進するサムライインキュベートより、全国での取り組みが紹介されました。今年、北陸・関西にも拠点が生まれ、ランウェイのネットワークはついに日本全体をカバー。各地域の会員同士をつなぐ動きが本格化しており、「地域の中だけで完結せず、地域と地域をつなぐことで、支援の可能性はまだまだ広がる」と語られました。
+</p>
+
+<div class="divider" id="session1"></div>
+
+<span class="section-label" style="background:var(--c-blue);">SESSION 1</span>
+<h2 style="margin-top:0;"><span class="pixel-mark"><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span></span>九州SR 1年間の軌跡</h2>
+
+<p>
+昨年5月、熊本でのキックオフから走り出した九州SR。当初は加盟のお願いに回っても断られることが少なくなかったそうですが、1年間で加盟団体は50を超える規模に拡大しました。
+</p>
+
+<p>
+九州SRならではの特徴が、韓国・台湾のVC・CVCにも加盟いただいている点です。アジアに近い福岡だからこそ、日本のスタートアップが海外に踏み出す足がかりになりたい——他地域のランウェイにはない独自の取り組みです。
+</p>
+
+<p>
+この1年で特に手応えがあったのは、幹事による個別の紹介・マッチング。地域をまたいだ紹介から実際に投資が実現した事例も生まれ、「九州の中だけでなく、全国のランウェイの枠組みを使えば、投資先のバリューアップにもっとつなげられる」という確信が得られた1年でした。
+</p>
+
+<p>
+一方で、問い合わせフォーム経由のマッチングには改善の余地があることも率直に共有されました。リード投資家の有無を事前に分かるようにする、起業家向けのファイナンス勉強会でリテラシーを底上げする、といった具体的な改善策が示されています。
+</p>
+
+<div class="photo-placeholder">📷 セッション①活動報告の写真をここに挿入</div>
+
+<div class="divider" id="lecture"></div>
+
+<span class="section-label" style="background:var(--c-red);">SPECIAL LECTURE</span>
+<h2 style="margin-top:0;"><span class="pixel-mark"><span style="background:var(--c-green);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span></span>スタートアップ金融の新しい選択肢「企業価値担保権」</h2>
+
+<p>
+特別講演には、金融担当副大臣・岩田和親氏にご登壇いただく予定でしたが、公務のため急遽ご欠席となり、金融庁監督局の大城健司氏に代理でご講演いただきました。
+</p>
+
+<p>
+テーマは、今年5月に施行されたばかりの新制度「企業価値担保権」。不動産などの個別資産ではなく、技術・顧客基盤・チームといった無形の価値も含めた「事業の将来性」に着目して融資を行いやすくする制度です。
+</p>
+
+<blockquote>
+「スタートアップの価値は、土地や倉庫ではなく、目に見えないものの中にこそある。担保となる資産を多く持たなくても、事業の将来性を説明し、評価してもらえれば資金調達の道が開ける——そういう環境に変えていくための重要な一歩」
+<cite>——大城 健司 氏（金融庁監督局）</cite>
+</blockquote>
+
+<p>
+会場からは制度の実務に関する質問が相次ぎ、関心の高さがうかがえました。エクイティ（出資）とデット（融資）を組み合わせて成長を加速させる米国の事例も紹介され、九州のスタートアップ金融の裾野を広げるヒントが詰まった講演となりました。
+</p>
+
+<div class="photo-placeholder">📷 特別講演の写真をここに挿入</div>
+
+<div class="divider" id="session2"></div>
+
+<span class="section-label" style="background:var(--c-orange);">SESSION 2</span>
+<h2 style="margin-top:0;"><span class="pixel-mark"><span style="background:var(--c-yellow);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span></span>地方発資金調達のリアル 〜3社累計60億円超の舞台裏〜</h2>
+
+<p>
+後半は、九州にゆかりのある3社の経営者をお迎えしたトークセッション。モデレーターはサムライインキュベートの渡邊真之助氏が務めました。
+</p>
+
+<div class="speakers">
+  <div class="speaker-card">
+    <div class="name">黒田 拓馬 氏</div>
+    <div class="org">株式会社3DC 代表取締役CEO<br>東北大発・次世代カーボン素材「グラフェンメソスポンジ」<br>シリーズA・累計約56.5億円</div>
+  </div>
+  <div class="speaker-card">
+    <div class="name">堀 菜々 氏</div>
+    <div class="org">Tensor Energy株式会社 代表取締役<br>福岡拠点・再エネ発電/蓄電池オーケストレーション<br>プレシリーズA・累計約7億円</div>
+  </div>
+  <div class="speaker-card">
+    <div class="name">佐藤 凜 氏</div>
+    <div class="org">Kick Space Technologies株式会社 代表取締役CEO<br>九州工業大学発・宇宙スタートアップ<br>シード・約6,000万円（2026年2月）</div>
+  </div>
+</div>
+
+<p>
+3社の累計調達額は合わせて60億円超。華やかな数字の裏側にある、リアルな試行錯誤が語られました。
+</p>
+
+<h3>「なぜ九州か」——それぞれの答え</h3>
+
+<p>
+再エネの先進地域だからこそ課題解決の最前線に立てる（Tensor Energy）、半導体をはじめ製造業の集積とものづくりネットワークが近くにある（Kick Space）——地方に根ざすことが、事業の強みに直結しているという話が印象的でした。
+</p>
+
+<h3>資金調達の舞台裏——本音のエピソード</h3>
+
+<blockquote>
+「一度断られたエンジェル投資家に、想いを綴った長文の"魂の手紙"を送ったら即決してもらえた」
+<cite>——佐藤 凜 氏（Kick Space Technologies）</cite>
+</blockquote>
+
+<blockquote>
+「投資家の『リードが決まったら連絡ください』は、起業家側からするとつらい言葉」
+<cite>——黒田 拓馬 氏（3DC）</cite>
+</blockquote>
+
+<blockquote>
+「大企業との連携はタイミングと出会いが全て。断られても翌月また行く。ただし必ずお土産（新しい情報）を持って」
+<cite>——堀 菜々 氏（Tensor Energy）</cite>
+</blockquote>
+
+<p>
+会場の起業家・投資家双方に刺さる学びが共有されたセッションとなりました。
+</p>
+
+<figure class="photo-group">
+  <img src="images/session2-talk.jpg" alt="セッション②トークセッションの様子。GMO天神オフィスの会場でモデレーターと登壇者が壇上で対話し、参加者がスクリーンのトークテーマを見ながら聞き入っている">
+  <figcaption>セッション②「地方発資金調達のリアル」トークセッションの様子</figcaption>
+</figure>
+
+<div class="divider" id="roadmap"></div>
+
+<span class="section-label" style="background:var(--c-green);">2ND YEAR ROADMAP</span>
+<h2 style="margin-top:0;"><span class="pixel-mark"><span style="background:var(--c-orange);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span></span>2年目方針：会員同士の「紹介」をもっと増やす</h2>
+
+<p>
+最後に、事務局より2年目のロードマップを発表しました。柱は3つです。
+</p>
+
+<div class="roadmap">
+  <div class="roadmap-card" style="background:var(--chip-blue);">
+    <div class="num" style="color:var(--c-blue);">01</div>
+    <div class="ttl">会員同士の紹介の活性化</div>
+    <div class="desc">投資先の資金調達やバリューアップの場面で、ランウェイの紹介機能を気軽に使ってもらう</div>
+  </div>
+  <div class="roadmap-card" style="background:var(--chip-pink);">
+    <div class="num" style="color:var(--c-red);">02</div>
+    <div class="ttl">スタートアップを交えたイベントの拡充</div>
+    <div class="desc">今日のようなリアルな交流の場から、次のラウンドの投資・融資につなげる</div>
+  </div>
+  <div class="roadmap-card" style="background:var(--chip-green);">
+    <div class="num" style="color:var(--c-green);">03</div>
+    <div class="ttl">地域を超えたクロス紹介の強化</div>
+    <div class="desc">全国の幹事会ネットワークを活かし、九州と他地域をつなぐマッチングを増やす</div>
+  </div>
+</div>
+
+<div class="recruit-banner">
+  <div class="recruit-banner-inner">
+    <div class="tag">共同幹事、募集中</div>
+    <p>九州SRを一緒に盛り上げる共同幹事を募集しています。イベント単位での関わりも歓迎とのことで、興味のある方はぜひ事務局までお問い合わせください。</p>
+  </div>
+</div>
+
+<h2><span class="pixel-mark"><span style="background:var(--c-red);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-purple);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-blue);"></span><span style="background:var(--c-cyan);"></span><span style="background:var(--c-green);"></span></span>おわりに</h2>
+
+<p>
+総会の後は交流会へ。登壇者を囲んで、会員同士の名刺交換や情報交換が閉会まで続きました。
+</p>
+
+<p>
+数名の想いから始まった九州SRは、1年で九州のスタートアップエコシステムに欠かせないネットワークに育ちつつあります。2年目は「つなぐ」をさらに深化させる1年に。今後の九州SRの活動に、ぜひご注目ください。
+</p>
+
+<figure class="photo-group">
+  <img src="images/group-photo.jpg" alt="九州スタートアップランウェイ一周年総会の参加者による集合写真。GMO天神オフィスにて、スクリーンに1st ANNIVERSARYの文字を背に全員でガッツポーズ">
+  <figcaption>一周年総会 参加者集合写真</figcaption>
+</figure>
+
+</article>
+</div>
+
+<footer class="article-footer">
+  <p>九州スタートアップランウェイ 一周年総会 イベントレポート<br>主催：九州スタートアップランウェイ事務局</p>
+  <p class="org-en">KYUSHU STARTUP RUNWAY</p>
+</footer>
+
+</body>
+</html>
